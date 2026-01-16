@@ -4,7 +4,11 @@
    "type": "module",
    "scripts": {
       "dev": "nodemon src/app.js",
-      "start": "node src/app.js"
+      "start": "node src/app.js",
+      "vercel-build": "echo 'Build complete'"
+   },
+   "engines": {
+      "node": ">=16.0.0"
    },
    "dependencies": {
       "cors": "^2.8.5",
