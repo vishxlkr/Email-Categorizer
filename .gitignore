@@ -62,7 +62,7 @@ coverage/
 .eslintcache
 
 # MongoDB
-data/
+# data/
 *.db
 
 # Misc
