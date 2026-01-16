@@ -1,6 +1,6 @@
 import Email from "../models/Email.js";
 import { classifyEmailWithAI } from "../services/classifyEmail.js";
-import { sampleEmails } from "../data/sampleEmails.js";
+import sampleEmails from "../data/sampleEmails.js";
 
 export const getAllEmails = async (req, res) => {
    try {
