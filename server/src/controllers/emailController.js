@@ -21,7 +21,7 @@ export const seedEmails = async (req, res) => {
                email.subject,
                email.body
             );
-            return { ...email, category };
+            return { ...email, category, isCorrect: true };
          })
       );
 
@@ -54,12 +54,8 @@ export const getAccuracy = async (req, res) => {
    try {
       const emails = await Email.find();
       const total = emails.length;
-      const withCorrection = emails.filter((e) => e.userCategory).length;
       const correct = emails.filter((e) => e.isCorrect === true).length;
-      const accuracy =
-         withCorrection > 0
-            ? ((correct / withCorrection) * 100).toFixed(2)
-            : 100;
+      const accuracy = total > 0 ? ((correct / total) * 100).toFixed(2) : 100;
 
       res.json({
          total,
