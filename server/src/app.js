@@ -9,15 +9,7 @@ dotenv.config();
 const app = express();
 
 // Middleware - CORS configuration
-app.use(
-   cors({
-      origin: [
-         "https://email-categorizer-1.onrender.com",
-         "http://localhost:5173",
-      ],
-      credentials: true,
-   })
-);
+app.use(cors());
 app.use(express.json());
 
 // Connect to Database
