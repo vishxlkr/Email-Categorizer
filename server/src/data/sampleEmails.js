@@ -168,3 +168,5 @@ export const sampleEmails = [
       body: "Buy medications online without prescription! Lowest prices guaranteed. Free worldwide shipping on orders over $100.",
    },
 ];
+
+export default sampleEmails;
