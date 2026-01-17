@@ -35,7 +35,7 @@ export default function App() {
 
    const handleEmailUpdate = (updatedEmail) => {
       setEmails(
-         emails.map((e) => (e._id === updatedEmail._id ? updatedEmail : e))
+         emails.map((e) => (e._id === updatedEmail._id ? updatedEmail : e)),
       );
    };
 
@@ -82,7 +82,3 @@ export default function App() {
       </div>
    );
 }
-
-
-git quickgit quickgit quickgit quickgit quickgit quickgit quickgit quickgit quickgit quickgit quickgit quick
-git quickgit quickgit quick
