@@ -82,7 +82,3 @@ export default function App() {
       </div>
    );
 }
-
-
-
-git quickgit quickgit quick
