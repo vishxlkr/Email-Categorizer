@@ -2,7 +2,11 @@
 
 AI-powered email classification system that automatically categorizes emails into Work, Personal, Promotion, Social, Finance, Updates, and Spam using OpenAI API with manual correction capability.
 
-## 🎯 Features
+## � Live Demo
+
+Visit the demo site: [https://email-categorizer-1.onrender.com/](https://email-categorizer-1.onrender.com/)
+
+## �🎯 Features
 
 -  ✅ Automatic email classification using AI (with fallback to keyword-based classification)
 -  ✅ 7 category classification: Work, Personal, Promotion, Social, Finance, Updates, Spam
