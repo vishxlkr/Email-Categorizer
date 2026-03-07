@@ -2,22 +2,22 @@
 
 AI-powered email classification system that automatically categorizes emails into Work, Personal, Promotion, Social, Finance, Updates, and Spam using OpenAI API with manual correction capability.
 
-## � Live Demo
+## Live Demo
 
 Visit the demo site: [https://email-categorizer-1.onrender.com/](https://email-categorizer-1.onrender.com/)
 
-## �🎯 Features
+## Features
 
--  ✅ Automatic email classification using AI (with fallback to keyword-based classification)
--  ✅ 7 category classification: Work, Personal, Promotion, Social, Finance, Updates, Spam
--  ✅ Manual correction with improved UX
--  ✅ Real-time accuracy tracking
--  ✅ 40+ realistic sample emails
--  ✅ MongoDB for data persistence
--  ✅ React frontend with Tailwind CSS
--  ✅ Express.js REST API backend
+- Automatic email classification using AI (with fallback to keyword-based classification)
+- 7 category classification: Work, Personal, Promotion, Social, Finance, Updates, Spam
+- Manual correction with improved UX
+- Real-time accuracy tracking
+- 40+ realistic sample emails
+- MongoDB for data persistence
+- React frontend with Tailwind CSS
+- Express.js REST API backend
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Email service/
@@ -64,13 +64,13 @@ Email service/
     └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
--  Node.js (v16 or higher)
--  MongoDB Atlas account (or local MongoDB)
--  OpenAI API key (optional - has fallback classification)
+- Node.js (v16 or higher)
+- MongoDB Atlas account (or local MongoDB)
+- OpenAI API key (optional - has fallback classification)
 
 ### Backend Setup
 
@@ -126,7 +126,7 @@ Email service/
 
 Open the application in browser and click the **"Refresh"** button to seed the database with 40 sample emails.
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Get All Emails
 
@@ -180,7 +180,7 @@ Response:
 }
 ```
 
-## 🎨 Categories
+## Categories
 
 The system classifies emails into 7 categories:
 
@@ -192,13 +192,13 @@ The system classifies emails into 7 categories:
 6. **Updates** - Software updates, newsletters, service notifications
 7. **Spam** - Scams, phishing, unwanted promotional content
 
-## 🧠 Classification Logic
+## Classification Logic
 
 1. **AI Classification** (Primary): Uses OpenAI API (gpt-3.5-turbo) for intelligent classification
 2. **Keyword-based Fallback**: If OpenAI is unavailable, uses keyword matching
 3. **Default**: If no patterns match, defaults to "Spam"
 
-## 💾 Database Schema
+## Database Schema
 
 ```javascript
 {
@@ -212,36 +212,36 @@ The system classifies emails into 7 categories:
 }
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 
--  React 18
--  Tailwind CSS
--  Vite
--  Fetch API
+- React 18
+- Tailwind CSS
+- Vite
+- Fetch API
 
 ### Backend
 
--  Node.js
--  Express.js
--  MongoDB + Mongoose
--  OpenAI API
--  dotenv
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- OpenAI API
+- dotenv
 
-## 📝 Sample Data
+## Sample Data
 
 The application includes 40 realistic sample emails covering all 7 categories. Each category contains 4-6 examples with realistic content including:
 
--  Company communications
--  Online shopping deals
--  Personal messages
--  Social media notifications
--  Banking and finance updates
--  Software notifications
--  Spam and phishing attempts
+- Company communications
+- Online shopping deals
+- Personal messages
+- Social media notifications
+- Banking and finance updates
+- Software notifications
+- Spam and phishing attempts
 
-## 🎯 Usage
+## Usage
 
 1. Click **"Refresh"** to load sample emails
 2. View AI-classified emails with color-coded category badges
@@ -250,7 +250,7 @@ The application includes 40 realistic sample emails covering all 7 categories. E
 5. View accuracy percentage at the top
 6. Success message confirms when category is updated
 
-## 🔧 Development
+## Development
 
 ### Backend Development
 
@@ -273,27 +273,27 @@ cd client
 npm run build  # Creates optimized production build
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 ### Backend
 
--  express
--  mongoose
--  cors
--  dotenv
--  openai
+- express
+- mongoose
+- cors
+- dotenv
+- openai
 
 ### Frontend
 
--  react
--  react-dom
--  tailwindcss
--  vite
+- react
+- react-dom
+- tailwindcss
+- vite
 
-## 🤝 Contributing
+## Contributing
 
 This is an educational project demonstrating AI-powered email classification with manual correction workflows.
 
-## 📄 License
+## License
 
 MIT License - Feel free to use this project for learning purposes.

@@ -17,7 +17,7 @@ export const classifyEmailWithAI = async (subject, body) => {
 
    try {
       const prompt = `Classify this email into one of these categories: ${categories.join(
-         ", "
+         ", ",
       )}.
     
 Subject: ${subject}
@@ -34,10 +34,7 @@ Respond with ONLY the category name, nothing else.`;
       const classification = response.choices[0].message.content.trim();
       return categories.includes(classification) ? classification : "Spam";
    } catch (error) {
-      console.warn(
-         "⚠️ AI classification failed, using fallback:",
-         error.message
-      );
+      console.warn("AI classification failed, using fallback:", error.message);
       return classifyEmailFallback(subject, body);
    }
 };

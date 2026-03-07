@@ -14,7 +14,7 @@ const categoryColors = {
 export default function EmailCard({ email, onUpdate }) {
    const [isEditing, setIsEditing] = useState(false);
    const [selectedCategory, setSelectedCategory] = useState(
-      email.userCategory || email.category
+      email.userCategory || email.category,
    );
    const [saving, setSaving] = useState(false);
    const [showSuccess, setShowSuccess] = useState(false);
@@ -62,7 +62,6 @@ export default function EmailCard({ email, onUpdate }) {
 
          {showSuccess && (
             <div className="mb-3 bg-green-50 border border-green-300 text-green-700 px-3 py-2 rounded text-sm flex items-center gap-2">
-               <span>✓</span>
                <span>Category updated successfully!</span>
             </div>
          )}
@@ -109,7 +108,6 @@ export default function EmailCard({ email, onUpdate }) {
                   onClick={() => setIsEditing(true)}
                   className="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center gap-1 hover:underline"
                >
-                  <span>✎</span>
                   <span>Correct Category</span>
                </button>
                {email.userCategory && (
